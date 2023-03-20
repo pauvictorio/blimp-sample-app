@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/css/index.css">
+		<title>Cars</title>
+	</head>
+
+	<body>
+		<div id="outer">
+			<div id="inner">
+				<p>Page views: <%= data.views %></p>
+				<form action="/process" method="post">
+					<input type="submit" name="reset" value="Reset">
+				</form>
+			</div>
+			<h1>Wow! You have <span><%= data.count %></span> cars!</h1>
+			<ul>
+				<% data.cars.forEach(car => { %>
+					<li><%= car.name %> - <%= car.year %></li>
+				<% }) %>
+			</ul>
+		</div>
+	</body>
+
+</html>

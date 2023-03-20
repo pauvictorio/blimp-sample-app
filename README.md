@@ -1,2 +1,2 @@
-# blimp-sample-app
-A sample app showing the usage of Blimp
+# A sample app using Blimp
+This app shows how Blimp is used to create a simple app interacting with a local MySQL database.
